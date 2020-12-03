@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p {
+    font-weight: 300;
+    color: black;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/bgjumbotron.jpg);
+    background-size: cover;
+}
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2 {
+    font-size: 5em;
+    color: white;
+}
+.banner .content p {
+    font-size: 1em;
+    color: white;
+}
+.btn {
+    font-size: 1em;
+    color: white;
+    background: #610000;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .logo {
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span {
+    color: #610000;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+header.sticky {
+    background:rgb(65, 64, 64);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .logo {
+    color: rgb(255, 255, 255);
+}
+header.sticky .navigation li a {
+    color: rgb(255, 254, 254);
+}
+header .navigation li a:hover {
+    color: #610000;
+}
+
+/* Tentang Saya */
+section {
+    padding: 100px;
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+.col50 p {
+    text-align: justify;
+    margin-top: 20px;
+}
+.titleText {
+    color:black;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span {
+    font-weight: 600;
+    font-size: 1.2em;
+    color:  #610000;
+
+}
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+}
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(90);
+    transition: 1s;
+}
+.row .col50 .imgBx img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+/* Pengalaman */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pengalaman .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.pengalaman .content .box {
+    width: 450px;
+    margin: 20px;
+    border: 15px solid white;
+    box-shadow: 10px 20px 35px rgba(0,0,0,0.08);
+}
+.pengalaman .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.pengalaman .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pengalaman .content .box .text {
+    padding: 15px 0 5px;
+    text-align: center;
+}
+.pengalaman .content .box .text p {
+    text-align: justify;
+}
+.pengalaman .content .box h3 {
+    font-weight: 400;
+    color: black;
+}
+
+/* Seminar dan pelatihan */
+.seminar .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.seminar .content .box {
+    width: 400px;
+    margin: 15px;
+}
+.seminar .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.seminar .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid;
+}
+.seminar .content .box .text {
+    padding: 15px 0 5px;
+    text-align: center;
+}
+.seminar .content .box .text h3 {
+    font-weight: 400;
+    color: black;   
+}
+
+/* Kemampuan */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.kemampuan .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.kemampuan .content .box {
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+}
+.kemampuan h4 {
+    font-size: 25px;
+    font-family: viga;
+}
+.titleText {
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/* Portofolio */
+.portofolio .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.portofolio .content .box {
+    width: 400px;
+    margin: 15px;
+}
+.portofolio .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.portofolio .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border: 1px solid;
+}
+.portofolio .content .box .text {
+    padding: 5px 0 5px;
+    text-align: center;
+}
+.portofolio .content .box .text h3 {
+    font-weight: 300;
+    color: black;   
+    margin-top: -40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* Kontak */
+.contactForm
+{
+    padding: 75px 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 25px 75px rgb(173, 175, 255);
+    max-width: 500px;
+    margin-top: 50px;
+    margin: auto;
+}
+.contactForm .socmed
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .socmed img {
+    width: 50px;
+}
+.titleText {
+    text-align: center;
+}
+
+/* Copyright */
+.copyrightText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 150px;
+}
+.copyrightText p {
+    color: rgb(83, 83, 83);
+}
+.copyrightText a {
+    color: #610000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    /* header dan menu toggle */
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(70, 70, 70);
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        color: rgb(255, 250, 250);
+        font-size: 1.6em;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(../img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+
+    /* banner */
+    .banner .content h2 {
+        font-size: 3em;
+        color: white;
+    }
+
+    /* Tentang Saya */
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    /* Pengalaman */
+    .pengalaman .content {
+        margin-top: 20px;
+    }
+    .pengalaman .content .box {
+        margin: 10px;
+    }
+    .pengalaman .content .box .imgBx {
+        height: 260px;
+    }
+    .content .box .text p {
+        text-align: Center;
+        font-size: 12px;
+    }
+
+    /* Seminar dan Pelatihan */
+    .title {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+}
+
+@media (max-width: 400px) {
+    section {
+        padding: 40px 0;
+    }
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: white;
+    }
+
+    .pengalaman .content {
+        margin-top: 0;
+    }
+
+    .seminar .content .box .imgBx img {
+        height: 175px;
+        margin-top: -30px;
+    }
+    .seminar .content .box .text h3 {
+        margin-top: -150px;
+    }
+
+    .portofolio .content {
+        margin-top: 0;
+    }
+
+    .portofolio .content .box .imgBx img {
+        height: 65%;
+    }
+    .portofolio .content .box .text h3 {
+        margin-top: -88px;
+    }
+
+    .contactForm {
+        padding: 35px 20px;
+        margin: 35px;
+    }
+    .contactForm .socmed img {
+        width: 30px;
+    }
+
+}
