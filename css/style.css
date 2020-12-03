@@ -479,10 +479,12 @@ section {
 
     .contactForm {
         padding: 35px 20px;
-        margin: 35px;
     }
     .contactForm .socmed img {
         width: 30px;
+    }
+    p {
+        font-size: 13px;
     }
 
 }
